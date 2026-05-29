@@ -1,42 +1,112 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/global.css">
-    <link rel="stylesheet" href="./assets/styles/header.css">
-    <link rel="stylesheet" href="./assets/styles/main.css">
-    <title>Experiências na Serra da Capivara</title>
+    <title>Serra da Capivara Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 
 <body>
+
     <header class="header">
         <div class="header-container">
-            <h2 style="cursor: pointer;"> 
-            <img class="logo" style="width: 50px;" src="./assets/images/cacto.png" alt="">
-                
-                Serra da Capivara <br><span>Experience</span></h2>
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-title">SERRA DA</span>
+                    <span class="brand-subtitle">CAPIVARA</span>
+                    <span class="brand-tag">EXPERIENCE</span>
+                </div>
+            </div>
 
-            <nav>
+            <nav class="nav-menu">
                 <ul class="menu">
-                    <li class="menu-item">Home</li>
-                    <li class="menu-item">Experiências</li>
-                    <li class="menu-item">Guias Locais</li>
-                    <li class="menu-item">Reservas</li>
-                    <li class="menu-item">Sobre a Região</li>
-                    <li class="menu-item">Contato</li>
+                    <li><a href="#" class="menu-item active">Home</a></li>
+                    <li><a href="#" class="menu-item">Experiências</a></li>
+                    <li><a href="#" class="menu-item">Guias Locais</a></li>
+                    <li><a href="#" class="menu-item">Reservas</a></li>
+                    <li><a href="#" class="menu-item">Sobre a Região</a></li>
+                    <li><a href="#" class="menu-item">Contato</a></li>
                 </ul>
             </nav>
+
+            <div class="button-container">
+                <button class="btn-entrar"><i class="fa-regular fa-user"></i> Entrar</button>
+            </div>
         </div>
     </header>
 
-    <main>
-        <div class="main-container">
-            <h1></h1>
-            <img class="background-main" src="./assets/images/background-xp-capivara.png" alt="Fundo Serra da Capivara">
+    <main class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Viva experiências<br>únicas na<br><span class="highlight">Serra da Capivara</span></h1>
+                <p>Trilhas, sítios arqueológicos, oficinas de cerâmica e aventuras incríveis esperam por você.</p>
+            </div>
+
+            <div class="search-bar">
+                <div class="search-field">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="O que você quer explorar?">
+                </div>
+                <div class="divider"></div>
+                <div class="search-field">
+                    <i class="fa-regular fa-calendar"></i>
+                    <input type="text" placeholder="Quando?">
+                </div>
+                <div class="divider"></div>
+                <div class="search-field">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="Pessoas">
+                </div>
+                <button class="btn-buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i> Buscar
+                </button>
+            </div>
         </div>
+
+        <div class="hero-divider"></div>
     </main>
+
+    <section class="features">
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <h3>Experiências Autênticas</h3>
+                <p>Vivências únicas com quem conhece a região</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-user-ninja"></i></div>
+                <h3>Guias Locais</h3>
+                <p>Guias experientes e apaixonados pela cultura local</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Segurança</h3>
+                <p>Atividades seguras e com todo suporte necessário</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <h3>Reserva Fácil</h3>
+                <p>Reserve online de forma rápida e prática</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                <h3>Suporte</h3>
+                <p>Atendimento humanizado antes, durante e após</p>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
