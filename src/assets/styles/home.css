@@ -89,20 +89,7 @@ body {
     color: #d97706;
 }
 
-.btn-entrar {
-    background-color: #d97706;
-    color: #ffffff;
-    padding: 10px 24px;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: background-color 0.2s;
-}
+
 
 .btn-entrar:hover {
     background-color: #b45309;
