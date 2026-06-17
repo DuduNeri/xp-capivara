@@ -1,0 +1,100 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url('../images/background-xp-capivara.png')
+        no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.login-container h1 {
+    text-align: center;
+    color: #311c0e;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #311c0e;
+}
+
+.campo input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #d97706;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: #d97706;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #b45309;
+}
+
+.voltar {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #d97706;
+    text-decoration: none;
+    font-weight: 600;
+}
+.cadastro {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.cadastro a {
+    color: #d97706;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cadastro a:hover {
+    text-decoration: underline;
+}
