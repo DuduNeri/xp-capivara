@@ -1,45 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Serra da Capivara Experience</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./assets/styles/home.css">
-    <link rel="stylesheet" href="./assets/styles/global.css">
-</head>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/home.css" />
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                    <div class="logo-icon">
-                        <i class="fa-solid fa-mountain-sun"></i>
-                    </div>
-                    <div class="logo-text">
-                        <span class="brand-title">SERRA DA</span>
-                        <span class="brand-subtitle">CAPIVARA</span>
-                        <span class="brand-tag">EXPERIENCE</span>
-                    </div>
+      <div class="header-container">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-mountain-sun"></i>
+          </div>
+          <div class="logo-text">
+            <span class="brand-title">SERRA DA</span>
+            <span class="brand-subtitle">CAPIVARA</span>
+            <span class="brand-tag">EXPERIENCE</span>
+          </div>
+        </div>
 
-            </div>
-
-            <nav class="nav-menu">
-                <ul class="menu">
-                    <li><a href="./home.html" class="menu-item active">Home</a></li>
-                    <li><a href="./experiencias.html" class="menu-item">Experiências</a></li>
-                    <li><a href="./guias.html" class="menu-item">Guias Locais</a></li>
-                    <li><a href="./reservas.html" class="menu-item">Reservas</a></li>
-                    <li><a href="./sobre.html" class="menu-item">Sobre a Região</a></li>
-                </ul>
-            </nav>
+        <nav class="nav-menu">
+          <ul class="menu">
+            <li><a href="./home.html" class="menu-item active">Home</a></li>
+            <li>
+              <a href="./experiencias.html" class="menu-item">Experiências</a>
+            </li>
+            <li><a href="./guias.html" class="menu-item">Guias Locais</a></li>
+            <li><a href="./reservas.html" class="menu-item">Reservas</a></li>
+            <li><a href="./sobre.html" class="menu-item">Sobre a Região</a></li>
+          </ul>
+        </nav>
 
             <div class="button-container">
 
@@ -58,79 +61,167 @@
                     <h2>Entre em Contato</h2>
                     <p>Preencha os campos abaixo para falar conosco.</p>
 
-                    <form>
-                        <input type="text" placeholder="Seu Nome" required>
-                        <input type="email" placeholder="Seu E-mail" required>
-                        <textarea placeholder="Sua Mensagem" rows="4" required style="resize: none;"></textarea>
-                        <button type="submit" class="btn-buscar" style="width: 100%;">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
+            <form id="form-contato">
+              <input type="text" placeholder="Seu Nome Completo" required />
+
+              <input type="email" placeholder="Seu E-mail" required />
+
+              <input type="tel" placeholder="Seu Telefone" />
+
+              <input type="text" placeholder="Empresa (Opcional)" />
+
+              <input type="text" placeholder="Cidade" />
+
+              <select required>
+                <option value="">Selecione o assunto</option>
+                <option>Dúvidas</option>
+                <option>Suporte</option>
+                <option>Orçamento</option>
+                <option>Parcerias</option>
+                <option>Reclamações</option>
+                <option>Outros</option>
+              </select>
+
+              <input type="text" placeholder="Assunto da Mensagem" required />
+
+              <textarea
+                placeholder="Descreva sua mensagem..."
+                rows="5"
+                maxlength="500"
+                required
+                style="resize: none"
+              ></textarea>
+
+              <label>
+                <input type="checkbox" required />
+                Concordo com os termos e política de privacidade.
+              </label>
+
+              <button type="submit" class="btn-buscar" style="width: 100%">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </header>
 
     <main class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Viva experiências<br>únicas na<br><span class="highlight">Serra da Capivara</span></h1>
-                <p>Trilhas, sítios arqueológicos, oficinas de cerâmica e aventuras incríveis esperam por você.</p>
-            </div>
-
-            <div class="search-bar">
-                <div class="search-field">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" placeholder="O que você quer explorar?">
-                </div>
-                <div class="divider"></div>
-                <div class="search-field">
-                    <i class="fa-regular fa-calendar"></i>
-                    <input type="text" placeholder="Quando?">
-                </div>
-                <div class="divider"></div>
-                <div class="search-field">
-                    <i class="fa-regular fa-user"></i>
-                    <input type="text" placeholder="Pessoas">
-                </div>
-                <button class="btn-buscar">
-                    <i class="fa-solid fa-magnifying-glass"></i> Buscar
-                </button>
-            </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>
+            Viva experiências<br />únicas na<br /><span class="highlight"
+              >Serra da Capivara</span
+            >
+          </h1>
+          <p>
+            Trilhas, sítios arqueológicos, oficinas de cerâmica e aventuras
+            incríveis esperam por você.
+          </p>
         </div>
 
-        <div class="hero-divider"></div>
+        <div class="search-bar">
+          <div class="search-field">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="O que você quer explorar?" />
+          </div>
+          <div class="divider"></div>
+          <div class="search-field">
+            <i class="fa-regular fa-calendar"></i>
+            <input type="text" placeholder="Quando?" />
+          </div>
+          <div class="divider"></div>
+          <div class="search-field">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="Pessoas" />
+          </div>
+          <button class="btn-buscar">
+            <i class="fa-solid fa-magnifying-glass"></i> Buscar
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-divider"></div>
     </main>
 
     <section class="features">
-        <div class="features-container">
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-                <h3>Experiências Autênticas</h3>
-                <p>Vivências únicas com quem conhece a região</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-user-ninja"></i></div>
-                <h3>Guias Locais</h3>
-                <p>Guias experientes e apaixonados pela cultura local</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                <h3>Segurança</h3>
-                <p>Atividades seguras e com todo suporte necessário</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-calendar-check"></i></div>
-                <h3>Reserva Fácil</h3>
-                <p>Reserve online de forma rápida e prática</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
-                <h3>Suporte</h3>
-                <p>Atendimento humanizado antes, durante e após</p>
-            </div>
+      <div class="features-container">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </div>
+          <h3>Experiências Autênticas</h3>
+          <p>Vivências únicas com quem conhece a região</p>
         </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-user-ninja"></i></div>
+          <h3>Guias Locais</h3>
+          <p>Guias experientes e apaixonados pela cultura local</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Segurança</h3>
+          <p>Atividades seguras e com todo suporte necessário</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <h3>Reserva Fácil</h3>
+          <p>Reserve online de forma rápida e prática</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+          <h3>Suporte</h3>
+          <p>Atendimento humanizado antes, durante e após</p>
+        </div>
+      </div>
     </section>
     <script src="./script/open_modal.js" defer></script>
     <script src="./script/close_modal.js" defer></script>
-</body>
+    <script>
+      document
+        .getElementById("form-contato")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
 
+          const nome = document.querySelector(
+            'input[placeholder="Seu Nome Completo"]',
+          ).value;
+          const email = document.querySelector(
+            'input[placeholder="Seu E-mail"]',
+          ).value;
+          const telefone = document.querySelector(
+            'input[placeholder="Seu Telefone"]',
+          ).value;
+          const empresa = document.querySelector(
+            'input[placeholder="Empresa (Opcional)"]',
+          ).value;
+          const cidade = document.querySelector(
+            'input[placeholder="Cidade"]',
+          ).value;
+          const assunto = document.querySelector("select").value;
+          const titulo = document.querySelector(
+            'input[placeholder="Assunto da Mensagem"]',
+          ).value;
+          const mensagem = document.querySelector("textarea").value;
+
+          const texto = `*Novo contato pelo site*%0A%0A
+         👤 Nome: ${nome}%0A
+         📧 E-mail: ${email}%0A
+        📱 Telefone: ${telefone}%0A
+        🏢 Empresa: ${empresa}%0A
+        📍 Cidade: ${cidade}%0A
+        📌 Categoria: ${assunto}%0A
+        📝 Assunto: ${titulo}%0A%0A
+        💬 Mensagem:%0A${mensagem}`;
+
+          const numero = "5589981393081";
+
+          window.open(`https://wa.me/${numero}?text=${texto}`, "_blank");
+        });
+    </script>
+  </body>
 </html>
