@@ -17,29 +17,92 @@
 
 <body>
     <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="fa-solid fa-mountain-sun"></i>
-                </div>
-                <div class="logo-text">
-                    <span class="brand-title">SERRA DA</span>
-                    <span class="brand-subtitle">CAPIVARA</span>
-                    <span class="brand-tag">EXPERIENCE</span>
-                </div>
-            </div>
-
-            <nav class="nav-menu">
-                <ul class="menu">
-                    <li><a href="./home.html" class="menu-item active">Home</a></li>
-                    <li><a href="./experiencias.html" class="menu-item">Experiências</a></li>
-                    <li><a href="./guias.html" class="menu-item">Guias Locais</a></li>
-                    <li><a href="./reservas.html" class="menu-item">Reservas</a></li>
-                    <li><a href="./sobre.html" class="menu-item">Sobre a Região</a></li>
-                </ul>
-            </nav>
+      <div class="header-container">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-mountain-sun"></i>
+          </div>
+          <div class="logo-text">
+            <span class="brand-title">SERRA DA</span>
+            <span class="brand-subtitle">CAPIVARA</span>
+            <span class="brand-tag">EXPERIENCE</span>
+          </div>
         </div>
+
+        <nav class="nav-menu">
+          <ul class="menu">
+            <li><a href="./home.html" class="menu-item">Home</a></li>
+            <li>
+              <a href="./experiencias.html" class="menu-item active">Experiências</a>
+            </li>
+            <li><a href="./guias.html" class="menu-item">Guias Locais</a></li>
+            <li><a href="./reservas.html" class="menu-item">Reservas</a></li>
+            <li><a href="./sobre.html" class="menu-item">Sobre a Região</a></li>
+          </ul>
+        </nav>
+
+            <div class="button-container">
+
+    <a href="./login.html" class="btn-login">
+        <i class="fa-regular fa-user"></i> Login
+    </a>
+
+    <button id="btn-entrar" class="btn-entrar">
+        Entre em contato
+    </button>
+
+</div>
+            <div id="modal-contato" class="modal-overlay">
+                <div class="modal-content">
+                    <span class="btn-fechar">&times;</span>
+                    <h2>Entre em Contato</h2>
+                    <p>Preencha os campos abaixo para falar conosco.</p>
+
+            <form id="form-contato">
+              <input type="text" placeholder="Seu Nome Completo" required />
+
+              <input type="email" placeholder="Seu E-mail" required />
+
+              <input type="tel" placeholder="Seu Telefone" />
+
+              <input type="text" placeholder="Empresa (Opcional)" />
+
+              <input type="text" placeholder="Cidade" />
+
+              <select required>
+                <option value="">Selecione o assunto</option>
+                <option>Dúvidas</option>
+                <option>Suporte</option>
+                <option>Orçamento</option>
+                <option>Parcerias</option>
+                <option>Reclamações</option>
+                <option>Outros</option>
+              </select>
+
+              <input type="text" placeholder="Assunto da Mensagem" required />
+
+              <textarea
+                placeholder="Descreva sua mensagem..."
+                rows="5"
+                maxlength="500"
+                required
+                style="resize: none"
+              ></textarea>
+
+              <label>
+                <input type="checkbox" required />
+                Concordo com os termos e política de privacidade.
+              </label>
+
+              <button type="submit" class="btn-buscar" style="width: 100%">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </header>
+
 
     <main>
         <section class="xp-section">
@@ -55,7 +118,7 @@
                         <img src="https://imgs.search.brave.com/zrbu16VDOc0afi4FPOpIxvzBXuyWFb0xou8JaIL9NZw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA3Lzk4LzI5LzI3/LzM2MF9GXzc5ODI5/MjcyNF9NOGxLR0VI/NGNwTHVnRzF1emZl/THd5Vmc4VERxOEdt/VC5qcGc"
                             alt="Pedra Furada" class="xp-image">
                     </div>
-                    <div class="xp-content">
+                    <div class="xp-conteudo">
                         <div class="xp-top">
                             <h3>Pedra Furada</h3>
                             <div class="xp-rating">
@@ -66,12 +129,12 @@
                         <p class="xp-description">
                             Cartão postal do Parque Nacional Serra da Capivara.
                         </p>
-                        <div class="xp-days">
-                            <span class="xp-day">Seg</span>
-                            <span class="xp-day">Ter</span>
-                            <span class="xp-day">Qua</span>
-                            <span class="xp-day">Qui</span>
-                            <span class="xp-day">Sex</span>
+                        <div class="xp-dias">
+                            <span class="xp-dia">Seg</span>
+                            <span class="xp-dia">Ter</span>
+                            <span class="xp-dia">Qua</span>
+                            <span class="xp-dia">Qui</span>
+                            <span class="xp-dia">Sex</span>
                         </div>
                     </div>
                 </div>
@@ -81,7 +144,7 @@
                         <img src="https://imgs.search.brave.com/-i9beuJwIqya67w6OC4pfI4UsDs0YlogvSEg5QBSld0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly92YXVs/dC5wdWxzYXJpbWFn/ZW5zLmNvbS5ici9m/aWxlL3RodW1iLzA1/TEgzMjkuanBn"
                             alt="Boqueirão da Pedra Furada" class="xp-image">
                     </div>
-                    <div class="xp-content">
+                    <div class="xp-conteudo">
                         <div class="xp-top">
                             <h3>Boqueirão da Pedra Furada</h3>
                             <div class="xp-rating">
@@ -92,12 +155,12 @@
                         <p class="xp-description">
                             Grande concentração de pinturas rupestres.
                         </p>
-                        <div class="xp-days">
-                            <span class="xp-day">Qua</span>
-                            <span class="xp-day">Qui</span>
-                            <span class="xp-day">Sex</span>
-                            <span class="xp-day">Sáb</span>
-                            <span class="xp-day">Dom</span>
+                        <div class="xp-dias">
+                            <span class="xp-dia">Qua</span>
+                            <span class="xp-dia">Qui</span>
+                            <span class="xp-dia">Sex</span>
+                            <span class="xp-dia">Sáb</span>
+                            <span class="xp-dia">Dom</span>
                         </div>
                     </div>
                 </div>
@@ -107,7 +170,7 @@
                         <img src="https://imgs.search.brave.com/g7-zW7rTqRkq73nyN8x2bnGoDKLmAd9OK1R5OJQyx6s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXZp/c3RhdW5xdWlldC5j/b20uYnIvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjEvMTEvUnVw/ZXN0cmUtRWNvLUxv/ZGdlLTUuanBn"
                             alt="Baixão das Andorinhas" class="xp-image">
                     </div>
-                    <div class="xp-content">
+                    <div class="xp-conteudo">
                         <div class="xp-top">
                             <h3>Baixão das Andorinhas</h3>
                             <div class="xp-rating">
@@ -118,11 +181,11 @@
                         <p class="xp-description">
                             Trilha de aventura e belas paisagens com revoada espetacular ao fim da tarde.
                         </p>
-                        <div class="xp-days">
-                            <span class="xp-day">Seg</span>
-                            <span class="xp-day">Ter</span>
-                            <span class="xp-day">Sex</span>
-                            <span class="xp-day">Sáb</span>
+                        <div class="xp-dias">
+                            <span class="xp-dia">Seg</span>
+                            <span class="xp-dia">Ter</span>
+                            <span class="xp-dia">Sex</span>
+                            <span class="xp-dia">Sáb</span>
                         </div>
                     </div>
                 </div>
@@ -132,7 +195,7 @@
                         <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=600"
                             alt="Museu da Natureza" class="xp-image">
                     </div>
-                    <div class="xp-content">
+                    <div class="xp-conteudo">
                         <div class="xp-top">
                             <h3>Museu da Natureza</h3>
                             <div class="xp-rating">
@@ -144,12 +207,12 @@
                             Uma obra-prima arquitetônica com exposição interativa que narra a história do universo e da
                             fauna.
                         </p>
-                        <div class="xp-days">
-                            <span class="xp-day">Qua</span>
-                            <span class="xp-day">Qui</span>
-                            <span class="xp-day">Sex</span>
-                            <span class="xp-day">Sáb</span>
-                            <span class="xp-day">Dom</span>
+                        <div class="xp-dias">
+                            <span class="xp-dia">Qua</span>
+                            <span class="xp-dia">Qui</span>
+                            <span class="xp-dia">Sex</span>
+                            <span class="xp-dia">Sáb</span>
+                            <span class="xp-dia">Dom</span>
                         </div>
                     </div>
                 </div>
@@ -159,7 +222,7 @@
                         <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=600"
                             alt="Baixão das Mulheres" class="xp-image">
                     </div>
-                    <div class="xp-content">
+                    <div class="xp-conteudo">
                         <div class="xp-top">
                             <h3>Baixão das Mulheres</h3>
                             <div class="xp-rating">
@@ -171,12 +234,12 @@
                             Um cânion imponente cercado por paredões rochosos gigantescos, ideal para quem busca trilhas
                             ecológicas.
                         </p>
-                        <div class="xp-days">
-                            <span class="xp-day">Seg</span>
-                            <span class="xp-day">Ter</span>
-                            <span class="xp-day">Qui</span>
-                            <span class="xp-day">Sex</span>
-                            <span class="xp-day">Sáb</span>
+                        <div class="xp-dias">
+                            <span class="xp-dia">Seg</span>
+                            <span class="xp-dia">Ter</span>
+                            <span class="xp-dia">Qui</span>
+                            <span class="xp-dia">Sex</span>
+                            <span class="xp-dia">Sáb</span>
                         </div>
                     </div>
                 </div>
@@ -186,7 +249,7 @@
                         <img src="https://portais.univasf.edu.br/dacc/agenda-de-eventos/museu-do-homem-americano/fumdham0385.jpg"
                             alt="Museu do Homem Americano" class="xp-image">
                     </div>
-                    <div class="xp-content">
+                    <div class="xp-conteudo">
                         <div class="xp-top">
                             <h3>Museu do Homem Americano</h3>
                             <div class="xp-rating">
@@ -198,12 +261,12 @@
                             Localizado em São Raimundo Nonato, expõe o riquíssimo acervo das escavações arqueológicas da
                             região.
                         </p>
-                        <div class="xp-days">
-                            <span class="xp-day">Ter</span>
-                            <span class="xp-day">Qua</span>
-                            <span class="xp-day">Qui</span>
-                            <span class="xp-day">Sex</span>
-                            <span class="xp-day">Sáb</span>
+                        <div class="xp-dias">
+                            <span class="xp-dia">Ter</span>
+                            <span class="xp-dia">Qua</span>
+                            <span class="xp-dia">Qui</span>
+                            <span class="xp-dia">Sex</span>
+                            <span class="xp-dia">Sáb</span>
                         </div>
                     </div>
                 </div>
@@ -213,7 +276,7 @@
                         <img src="https://www.viagensecaminhos.com/wp-content/uploads/2024/08/mirante-serra-da-capivara.jpg"
                             alt="Baixão da Pedra Furada" class="xp-image">
                     </div>
-                    <div class="xp-content">
+                    <div class="xp-conteudo">
                         <div class="xp-top">
                             <h3>Baixão da Pedra Furada</h3>
                             <div class="xp-rating">
@@ -228,12 +291,12 @@
                             mais impressionantes e os
                             registros pré-históricos mais importantes das Américas.
                         </p>
-                        <div class="xp-days">
-                            <span class="xp-day">Ter</span>
-                            <span class="xp-day">Qua</span>
-                            <span class="xp-day">Qui</span>
-                            <span class="xp-day">Sex</span>
-                            <span class="xp-day">Sáb</span>
+                        <div class="xp-dias">
+                            <span class="xp-dia">Ter</span>
+                            <span class="xp-dia">Qua</span>
+                            <span class="xp-dia">Qui</span>
+                            <span class="xp-dia">Sex</span>
+                            <span class="xp-dia">Sáb</span>
                         </div>
                     </div>
                 </div>
@@ -243,7 +306,7 @@
                         <img src="https://viajento.com/wp-content/uploads/2023/02/circuito-do-sitio-do-meio-serra-da-capivara-piaui-brasil-estrada.jpg?w=1024"
                             alt="Circuito do Sítio do Meio" class="xp-image">
                     </div>
-                    <div class="xp-content">
+                    <div class="xp-conteudo">
                         <div class="xp-top">
                             <h3>Circuito do Sítio do Meio</h3>
                             <div class="xp-rating">
@@ -260,23 +323,22 @@
                             Dias, que é menor, mas fica
                             mais próxima dessa área.
                         </p>
-                        <div class="xp-days">
-                            <span class="xp-day">Ter</span>
-                            <span class="xp-day">Qua</span>
-                            <span class="xp-day">Qui</span>
-                            <span class="xp-day">Sex</span>
-                            <span class="xp-day">Sáb</span>
+                        <div class="xp-dias">
+                            <span class="xp-dia">Ter</span>
+                            <span class="xp-dia">Qua</span>
+                            <span class="xp-dia">Qui</span>
+                            <span class="xp-dia">Sex</span>
+                            <span class="xp-dia">Sáb</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 9º Card Adicionado: Desfiladeiro da Capivara -->
                 <div class="xp-card">
                     <div class="xp-image-wrapper">
                         <img src="https://viajento.com/wp-content/uploads/2023/02/circuito-do-desfiladeiro-serra-da-capivara-piaui-brasil-setas-1.jpg?w=1024"
                             alt="Desfiladeiro da Capivara" class="xp-image">
                     </div>
-                    <div class="xp-content">
+                    <div class="xp-conteudo">
                         <div class="xp-top">
                             <h3>Desfiladeiro da Capivara</h3>
                             <div class="xp-rating">
@@ -289,12 +351,12 @@
                             paredões imponentes e abrigos repletos de pinturas rupestres que retratam o cotidiano
                             pré-histórico.
                         </p>
-                        <div class="xp-days">
-                            <span class="xp-day">Seg</span>
-                            <span class="xp-day">Qua</span>
-                            <span class="xp-day">Qui</span>
-                            <span class="xp-day">Sex</span>
-                            <span class="xp-day">Dom</span>
+                        <div class="xp-dias">
+                            <span class="xp-dia">Seg</span>
+                            <span class="xp-dia">Qua</span>
+                            <span class="xp-dia">Qui</span>
+                            <span class="xp-dia">Sex</span>
+                            <span class="xp-dia">Dom</span>
                         </div>
                     </div>
                 </div>

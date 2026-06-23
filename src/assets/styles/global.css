@@ -105,11 +105,41 @@ body {
     gap: 8px;
     text-decoration: none;
     transition: background-color 0.2s;
+    width: 100%;
+    max-width: 250px;
 }
 
 .btn-entrar:hover {
     background: #b45309;
 }
+
+.btn-login {
+    background-color: #d97706;
+    color: #ffffff;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-size: 13.2px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #b45309;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -292,11 +322,6 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         gap: 16px;
-    }
-
-    .btn-entrar {
-        width: 100%;
-        max-width: 250px;
     }
 
     .hero-content h1 {

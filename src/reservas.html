@@ -17,29 +17,312 @@
 
 <body>
     <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="fa-solid fa-mountain-sun"></i>
-                </div>
-                <div class="logo-text">
-                    <span class="brand-title">SERRA DA</span>
-                    <span class="brand-subtitle">CAPIVARA</span>
-                    <span class="brand-tag">EXPERIENCE</span>
-                </div>
-            </div>
-
-            <nav class="nav-menu">
-                <ul class="menu">
-                    <li><a href="./home.html" class="menu-item active">Home</a></li>
-                    <li><a href="./experiencias.html" class="menu-item">Experiências</a></li>
-                    <li><a href="./guias.html" class="menu-item">Guias Locais</a></li>
-                    <li><a href="./reservas.html" class="menu-item">Reservas</a></li>
-                    <li><a href="./sobre.html" class="menu-item">Sobre a Região</a></li>
-                </ul>
-            </nav>
-
+      <div class="header-container">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-mountain-sun"></i>
+          </div>
+          <div class="logo-text">
+            <span class="brand-title">SERRA DA</span>
+            <span class="brand-subtitle">CAPIVARA</span>
+            <span class="brand-tag">EXPERIENCE</span>
+          </div>
         </div>
+
+        <nav class="nav-menu">
+          <ul class="menu">
+            <li><a href="./home.html" class="menu-item">Home</a></li>
+            <li>
+              <a href="./experiencias.html" class="menu-item">Experiências</a>
+            </li>
+            <li><a href="./guias.html" class="menu-item">Guias Locais</a></li>
+            <li><a href="./reservas.html" class="menu-item active">Reservas</a></li>
+            <li><a href="./sobre.html" class="menu-item">Sobre a Região</a></li>
+          </ul>
+        </nav>
+
+            <div class="button-container">
+
+    <a href="./login.html" class="btn-login">
+        <i class="fa-regular fa-user"></i> Login
+    </a>
+
+    <button id="btn-entrar" class="btn-entrar">
+        Entre em contato
+    </button>
+
+</div>
+            <div id="modal-contato" class="modal-overlay">
+                <div class="modal-content">
+                    <span class="btn-fechar"></span>
+                    <h2>Entre em Contato</h2>
+                    <p>Preencha os campos abaixo para falar conosco.</p>
+
+            <form id="form-contato">
+              <input type="text" placeholder="Seu Nome Completo" required />
+
+              <input type="email" placeholder="Seu E-mail" required />
+
+              <input type="tel" placeholder="Seu Telefone" />
+
+              <input type="text" placeholder="Empresa (Opcional)" />
+
+              <input type="text" placeholder="Cidade" />
+
+              <select required>
+                <option value="">Selecione o assunto</option>
+                <option>Dúvidas</option>
+                <option>Suporte</option>
+                <option>Orçamento</option>
+                <option>Parcerias</option>
+                <option>Reclamações</option>
+                <option>Outros</option>
+              </select>
+
+              <input type="text" placeholder="Assunto da Mensagem" required />
+
+              <textarea
+                placeholder="Descreva sua mensagem..."
+                rows="5"
+                maxlength="500"
+                required
+                style="resize: none"
+              ></textarea>
+
+              <label>
+                <input type="checkbox" required />
+                Concordo com os termos e política de privacidade.
+              </label>
+
+              <button type="submit" class="btn-buscar" style="width: 100%">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </header>
+
+  
+ 
+
+    <main class="reservas-container">
+
+        <section class="cabecalho-pagina">
+            <h1>Reserve sua Experiência</h1>
+            <p>Escolha as datas da sua viagem e encontre os melhores roteiros e guias disponíveis para explorar o berço do homem americano.</p>
+        </section>
+
+      <div class="filtro-data">
+        <div class="filtro-container">
+          <label>Data de Início</label>
+          <div class="filtro-bloco">
+            <i class="fa-regular fa-calendar-dias"></i>
+            <input type="date" />
+          </div>
+        </div>
+
+        <div class="filtro-container">
+          <label>Participantes</label>
+          <div class="filtro-bloco">
+            <i class="fa-solid fa-user-group"></i>
+            <select>
+              <option value="1">1 Pessoa</option>
+              <option value="2" selected>2 Pessoas</option>
+              <option value="3">3 Pessoas</option>
+              <option value="4">4 Pessoas</option>
+              <option value="5+">5 ou mais</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filtro-container">
+          <label>Tipo de Roteiro</label>
+          <div class="filtro-bloco">
+            <i class="fa-solid fa-map"></i>
+            <select>
+              <option value="todos">Todos os circuitos</option>
+              <option value="pedra-furada">Desfiladeiro & Pedra Furada</option>
+              <option value="andorinhas">Baixão das Andorinhas</option>
+              <option value="sierra">Serra Branca</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="btn-filtrar">Buscar Vagas</button>
+      </div>
+
+      <div class="xp-grid">
+        <div class="xp-card">
+          <div class="xp-image" style="background-color: #d1d5db;">
+            <img src="https://www.viagensecaminhos.com/wp-content/uploads/2024/08/mirante-serra-da-capivara.jpg" alt="Baixão da Pedra Furada" class="xp-image">
+            <span class="xp-badge">Mais Popular</span>
+          </div>
+          <div class="xp-content">
+            <h3 class="xp-title">Circuito Baixão da Pedra Furada</h3>
+            <div class="xp-info">
+              <span><i class="fa-regular fa-clock"></i> 4 a 6 horas</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Nível: Leve</span>
+            </div>
+            <p class="xp-desc">Visite o Sítio do Meio e o majestoso monumento geológico da Pedra Furada, com alta concentração de pinturas rupestres.</p>
+            <div class="xp-footer">
+              <div class="xp-price">
+                <span>A partir de</span>
+                <strong>R$ 180,00</strong>
+              </div>
+              <a href="#" class="btn-reservar">Selecionar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="xp-card">
+          <div class="xp-image" style="background-color: #d1d5db;">
+            <img src="https://viajento.com/wp-content/uploads/2023/02/circuito-do-desfiladeiro-serra-da-capivara-piaui-brasil-setas-1.jpg?w=1024"
+                            alt="Desfiladeiro da Capivara" class="xp-image">
+            <span class="xp-badge">Ecoturismo</span>
+          </div>
+          <div class="xp-content">
+            <h3 class="xp-title">Desfiladeiro da Capivara</h3>
+            <div class="xp-info">
+              <span><i class="fa-regular fa-clock"></i> 5 horas</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Nível: Médio</span>
+            </div>
+            <p class="xp-desc">Uma trilha clássica passando pela Toca da Entrada do Pajaú e Toca do Inferno. Cenários de tirar o fôlego e muita história.</p>
+            <div class="xp-footer">
+              <div class="xp-price">
+                <span>A partir de</span>
+                <strong>R$ 200,00</strong>
+              </div>
+              <a href="#" class="btn-reservar">Selecionar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="xp-card">
+          <div class="xp-image">
+            <img src="https://imgs.search.brave.com/g7-zW7rTqRkq73nyN8x2bnGoDKLmAd9OK1R5OJQyx6s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXZp/c3RhdW5xdWlldC5j/b20uYnIvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjEvMTEvUnVw/ZXN0cmUtRWNvLUxv/ZGdlLTUuanBn"                      alt="Baixão das Andorinhas" class="xp-image">
+            <span class="xp-badge">Pôr do Sol</span>
+          </div>
+          <div class="xp-content">
+            <h3 class="xp-title">Baixão das Andorinhas</h3>
+            <div class="xp-info">
+              <span><i class="fa-regular fa-clock"></i> 3 horas</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Nível: Leve</span>
+            </div>
+            <p class="xp-desc">Experiência inesquecível no final da tarde para observar o espetáculo da revoada das andorinhas em um cânion impressionante.</p>
+            <div class="xp-footer">
+              <div class="xp-price">
+                <span>A partir de</span>
+                <strong>R$ 150,00</strong>
+              </div>
+              <a href="#" class="btn-reservar">Selecionar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="xp-card">
+          <div class="xp-image">
+            <img src="https://imgs.search.brave.com/-i9beuJwIqya67w6OC4pfI4UsDs0YlogvSEg5QBSld0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly92YXVs/dC5wdWxzYXJpbWFn/ZW5zLmNvbS5ici9m/aWxlL3RodW1iLzA1/TEgzMjkuanBn"                         alt="Boqueirão da Pedra Furada" class="xp-image">
+          </div>
+          <div class="xp-content">
+            <h3 class="xp-title">Boqueirão da Pedra Furada</h3>
+            <div class="xp-info">
+              <span><i class="fa-regular fa-clock"></i> 4 horas</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Nível: Fácil</span>
+            </div>
+            <p class="xp-desc">Passei no sítio arqueologico com a maior concentração de pinturas rupestres das Américas.</p>
+            <div class="xp-footer">
+              <div class="xp-price">
+                <span>A partir de</span>
+                <strong>R$ 250,00</strong>
+              </div>
+              <a href="#" class="btn-reservar">Selecionar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="xp-card">
+          <div class="xp-image">
+            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=600" alt="Baixão das Mulheres" class="xp-image">
+          </div>
+          <div class="xp-content">
+            <h3 class="xp-title">Baixão das Mulheres</h3>
+            <div class="xp-info">
+              <span><i class="fa-regular fa-clock"></i> 6 horas</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Nível: Médio</span>
+            </div>
+            <p class="xp-desc">Um cânion imponente cercado por paredões rochosos gigantescos, ideal para quem busca trilhas ecológicas.</p>
+            <div class="xp-footer">
+              <div class="xp-price">
+                <span>A partir de</span>
+                <strong>R$ 300,00</strong>
+              </div>
+              <a href="#" class="btn-reservar">Selecionar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="xp-card">
+          <div class="xp-image">
+            <img src="https://portais.univasf.edu.br/dacc/agenda-de-eventos/museu-do-homem-americano/fumdham0385.jpg" alt="Museu do Homem Americano" class="xp-image">
+          </div>
+          <div class="xp-content">
+            <h3 class="xp-title">Museu do Homem Americano</h3>
+            <div class="xp-info">
+              <span><i class="fa-regular fa-clock"></i> 2 horas</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Nível: Fácil</span>
+            </div>
+            <p class="xp-desc">Localizado em São Raimundo Nonato, expõe o riquíssimo acervo das escavações arqueológicas daregião.</p>
+            <div class="xp-footer">
+              <div class="xp-price">
+                <span>A partir de</span>
+                <strong>R$ 20,00</strong>
+              </div>
+              <a href="#" class="btn-reservar">Selecionar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="modal-contato" class="modal-overlay">
+        <div class="modal-content">
+            <span class="btn-fechar">&times;</span>
+            <h2>Entre em Contato</h2>
+            <p>Preencha os campos abaixo para falar conosco.</p>
+
+            <form id="form-contato">
+              <input type="text" placeholder="Seu Nome Completo" required />
+              <input type="email" placeholder="Seu E-mail" required />
+              <input type="tel" placeholder="Seu Telefone" />
+              <input type="text" placeholder="Empresa (Opcional)" />
+              <input type="text" placeholder="Cidade" />
+              <select required>
+                <option value="">Selecione o assunto</option>
+                <option>Dúvidas</option>
+                <option>Suporte</option>
+                <option>Orçamento</option>
+                <option>Parcerias</option>
+                <option>Reclamações</option>
+                <option>Outros</option>
+              </select>
+              <input type="text" placeholder="Assunto da Mensagem" required />
+              <textarea placeholder="Descreva sua mensagem..." rows="5" maxlength="500" required style="resize: none"></textarea>
+              <label>
+                <input type="checkbox" required />
+                Concordo com os termos e política de privacidade.
+              </label>
+              <button type="submit" class="btn-buscar" style="width: 100%">
+                Enviar Mensagem
+              </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script/open_modal.js" defer></script>
+    <script src="./script/close_modal.js" defer></script> 
+    
+    
+
 </body>
 </html>

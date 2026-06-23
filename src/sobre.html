@@ -17,29 +17,92 @@
 
 <body>
     <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="fa-solid fa-mountain-sun"></i>
-                </div>
-                <div class="logo-text">
-                    <span class="brand-title">SERRA DA</span>
-                    <span class="brand-subtitle">CAPIVARA</span>
-                    <span class="brand-tag">EXPERIENCE</span>
-                </div>
-            </div>
-
-            <nav class="nav-menu">
-                <ul class="menu">
-                    <li><a href="./home.html" class="menu-item active">Home</a></li>
-                    <li><a href="./experiencias.html" class="menu-item">Experiências</a></li>
-                    <li><a href="./guias.html" class="menu-item">Guias Locais</a></li>
-                    <li><a href="./reservas.html" class="menu-item">Reservas</a></li>
-                    <li><a href="./sobre.html" class="menu-item">Sobre a Região</a></li>
-                </ul>
-            </nav>
+      <div class="header-container">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-mountain-sun"></i>
+          </div>
+          <div class="logo-text">
+            <span class="brand-title">SERRA DA</span>
+            <span class="brand-subtitle">CAPIVARA</span>
+            <span class="brand-tag">EXPERIENCE</span>
+          </div>
         </div>
+
+        <nav class="nav-menu">
+          <ul class="menu">
+            <li><a href="./home.html" class="menu-item">Home</a></li>
+            <li>
+              <a href="./experiencias.html" class="menu-item">Experiências</a>
+            </li>
+            <li><a href="./guias.html" class="menu-item">Guias Locais</a></li>
+            <li><a href="./reservas.html" class="menu-item">Reservas</a></li>
+            <li><a href="./sobre.html" class="menu-item active">Sobre a Região</a></li>
+          </ul>
+        </nav>
+
+            <div class="button-container">
+
+    <a href="./login.html" class="btn-login">
+        <i class="fa-regular fa-user"></i> Login
+    </a>
+
+    <button id="btn-entrar" class="btn-entrar">
+        Entre em contato
+    </button>
+
+</div>
+            <div id="modal-contato" class="modal-overlay">
+                <div class="modal-content">
+                    <span class="btn-fechar">&times;</span>
+                    <h2>Entre em Contato</h2>
+                    <p>Preencha os campos abaixo para falar conosco.</p>
+
+            <form id="form-contato">
+              <input type="text" placeholder="Seu Nome Completo" required />
+
+              <input type="email" placeholder="Seu E-mail" required />
+
+              <input type="tel" placeholder="Seu Telefone" />
+
+              <input type="text" placeholder="Empresa (Opcional)" />
+
+              <input type="text" placeholder="Cidade" />
+
+              <select required>
+                <option value="">Selecione o assunto</option>
+                <option>Dúvidas</option>
+                <option>Suporte</option>
+                <option>Orçamento</option>
+                <option>Parcerias</option>
+                <option>Reclamações</option>
+                <option>Outros</option>
+              </select>
+
+              <input type="text" placeholder="Assunto da Mensagem" required />
+
+              <textarea
+                placeholder="Descreva sua mensagem..."
+                rows="5"
+                maxlength="500"
+                required
+                style="resize: none"
+              ></textarea>
+
+              <label>
+                <input type="checkbox" required />
+                Concordo com os termos e política de privacidade.
+              </label>
+
+              <button type="submit" class="btn-buscar" style="width: 100%">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </header>
+
 
    <main>
         <section class="sobre-container">

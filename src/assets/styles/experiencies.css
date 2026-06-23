@@ -57,7 +57,7 @@
     display: block;
 }
 
-.xp-content {
+.xp-conteudo {
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -106,14 +106,14 @@
     flex-grow: 1; 
 }
 
-.xp-days {
+.xp-dias {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     margin-top: auto; 
 }
 
-.xp-day {
+.xp-dia {
     background-color: #f3f4f6;
     color: #4b5563;
     padding: 8px 14px;

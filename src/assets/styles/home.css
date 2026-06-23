@@ -89,12 +89,6 @@ body {
     color: #d97706;
 }
 
-
-
-.btn-entrar:hover {
-    background-color: #b45309;
-}
-
 .hero {
     position: relative;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 20%, rgba(255, 255, 255, 0.4) 50%, rgba(0, 0, 0, 0.1)),
@@ -310,30 +304,4 @@ body {
     .features-container {
         grid-template-columns: 1fr;
     }
-}
-.btn-login {
-    background-color: #d97706;
-    color: #ffffff;
-    border: none;
-    padding: 9px 20px;
-    border-radius: 8px;
-    font-size: 13.2px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    transition: background-color 0.2s;
-}
-
-.btn-login:hover {
-    background-color: #b45309;
-}
-
-.button-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
 }
