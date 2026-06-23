@@ -158,8 +158,9 @@ body {
     outline: none;
     width: 100%;
     font-size: 15px;
-    color: #333;
+    color: #a1a1aa;
     font-weight: 500;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .search-field input::placeholder {
