@@ -152,7 +152,7 @@ body {
 }
 
 .lista-aventuras li::before {
-    content: '\2726'; /
+    content: '\2726'; 
     position: absolute;
     left: 0;
     top: 2px;

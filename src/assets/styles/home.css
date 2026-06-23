@@ -317,7 +317,7 @@ body {
     border: none;
     padding: 9px 20px;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 13.2px;
     font-weight: 600;
     cursor: pointer;
     display: flex;
@@ -330,6 +330,7 @@ body {
 .btn-login:hover {
     background-color: #b45309;
 }
+
 .button-container {
     display: flex;
     flex-direction: row;
