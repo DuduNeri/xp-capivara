@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serra da Capivara Experience</title>
+    <title>Serra da Capivara Experience - Guias Locais</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,104 +16,90 @@
 </head>
 
 <body>
-   <header class="header">
-      <div class="header-container">
-        <div class="logo">
-          <div class="logo-icon">
-            <i class="fa-solid fa-mountain-sun"></i>
-          </div>
-          <div class="logo-text">
-            <span class="brand-title">SERRA DA</span>
-            <span class="brand-subtitle">CAPIVARA</span>
-            <span class="brand-tag">EXPERIENCE</span>
-          </div>
-        </div>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-title">SERRA DA</span>
+                    <span class="brand-subtitle">CAPIVARA</span>
+                    <span class="brand-tag">EXPERIENCE</span>
+                </div>
+            </div>
 
-        <nav class="nav-menu">
-          <ul class="menu">
-            <li><a href="./home.html" class="menu-item">Home</a></li>
-            <li>
-              <a href="./experiencias.html" class="menu-item">Experiências</a>
-            </li>
-            <li><a href="./guias.html" class="menu-item active">Guias Locais</a></li>
-            <li><a href="./reservas.html" class="menu-item">Reservas</a></li>
-            <li><a href="./sobre.html" class="menu-item">Sobre a Região</a></li>
-          </ul>
-        </nav>
+            <nav class="nav-menu">
+                <ul class="menu">
+                    <li><a href="./home.html" class="menu-item">Home</a></li>
+                    <li><a href="./experiencias.html" class="menu-item">Experiências</a></li>
+                    <li><a href="./guias.html" class="menu-item active">Guias Locais</a></li>
+                    <li><a href="./reservas.html" class="menu-item">Reservas</a></li>
+                    <li><a href="./sobre.html" class="menu-item">Sobre a Região</a></li>
+                </ul>
+            </nav>
 
             <div class="button-container">
-
-    <a href="./login.html" class="btn-login">
-        <i class="fa-regular fa-user"></i> Login
-    </a>
-
-    <button id="btn-entrar" class="btn-entrar">
-        Entre em contato
-    </button>
-
-</div>
-            <div id="modal-contato" class="modal-overlay">
-                <div class="modal-content">
-                    <span class="btn-fechar">&times;</span>
-                    <h2>Entre em Contato</h2>
-                    <p>Preencha os campos abaixo para falar conosco.</p>
-
-            <form id="form-contato">
-              <input type="text" placeholder="Seu Nome Completo" required />
-
-              <input type="email" placeholder="Seu E-mail" required />
-
-              <input type="tel" placeholder="Seu Telefone" />
-
-              <input type="text" placeholder="Empresa (Opcional)" />
-
-              <input type="text" placeholder="Cidade" />
-
-              <select required>
-                <option value="">Selecione o assunto</option>
-                <option>Dúvidas</option>
-                <option>Suporte</option>
-                <option>Orçamento</option>
-                <option>Parcerias</option>
-                <option>Reclamações</option>
-                <option>Outros</option>
-              </select>
-
-              <input type="text" placeholder="Assunto da Mensagem" required />
-
-              <textarea
-                placeholder="Descreva sua mensagem..."
-                rows="5"
-                maxlength="500"
-                required
-                style="resize: none"
-              ></textarea>
-
-              <label>
-                <input type="checkbox" required />
-                Concordo com os termos e política de privacidade.
-              </label>
-
-              <button type="submit" class="btn-buscar" style="width: 100%">
-                Enviar Mensagem
-              </button>
-            </form>
-          </div>
+                <a href="./login.html" class="btn-login">
+                    <i class="fa-regular fa-user"></i> Login
+                </a>
+                <button id="btn-entrar" class="btn-entrar">
+                    Entre em contato
+                </button>
+            </div>
         </div>
-      </div>
+
+        <div id="modal-contato" class="modal-overlay">
+            <div class="modal-content">
+                <span class="btn-fechar">&times;</span>
+                <h2>Entre em Contato</h2>
+                <p>Preencha os campos abaixo para falar conosco.</p>
+
+                <form id="form-contato">
+                    <input type="text" placeholder="Seu Nome Completo" required />
+                    <input type="email" placeholder="Seu E-mail" required />
+                    <input type="tel" placeholder="Seu Telefone" />
+                    <input type="text" placeholder="Empresa (Opcional)" />
+                    <input type="text" placeholder="Cidade" />
+
+                    <select required>
+                        <option value="">Selecione o assunto</option>
+                        <option>Dúvidas</option>
+                        <option>Suporte</option>
+                        <option>Orçamento</option>
+                        <option>Parcerias</option>
+                        <option>Reclamações</option>
+                        <option>Outros</option>
+                    </select>
+
+                    <input type="text" placeholder="Assunto da Mensagem" required />
+                    <textarea placeholder="Descreva sua mensagem..." rows="5" maxlength="500" required
+                        style="resize: none"></textarea>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" required />
+                        <span>Concordo com os termos e política de privacidade.</span>
+                    </label>
+
+                    <button type="submit" class="btn-buscar" style="width: 100%">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
     </header>
 
     <main>
         <section class="guides-section">
             <div class="guides-header">
                 <h2>Guias Locais</h2>
-                <p>Conheça guias experientes para explorar a Serra da Capivara</p>
+                <p>Conheça guias credenciados e experientes para explorar o Parque Nacional da Serra da Capivara</p>
             </div>
+
             <div class="guides-grid">
-               
                 <div class="guide-card">
-                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Guia"
-                        class="guide-image">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80"
+                        alt="Guia João Oliveira" class="guide-image">
                     <div class="guide-content">
                         <div class="guide-top">
                             <h3>João Oliveira</h3>
@@ -123,7 +109,8 @@
                             </div>
                         </div>
                         <p class="guide-description">
-                            Especialista em trilhas ecológicas e pinturas rupestres.
+                            Especialista em trilhas ecológicas profundas, circuitos arqueológicos e história das
+                            pinturas rupestres.
                         </p>
                         <div class="guide-days">
                             <span class="guide-day">Seg</span>
@@ -134,46 +121,35 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="guide-card">
-
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Guia"
-                        class="guide-image">
-
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80"
+                        alt="Guia Maria Santos" class="guide-image">
                     <div class="guide-content">
-
                         <div class="guide-top">
-
                             <h3>Maria Santos</h3>
-
                             <div class="guide-rating">
                                 <i class="fa-solid fa-star"></i>
                                 <span>4.8</span>
                             </div>
-
                         </div>
-
                         <p class="guide-description">
-                            Passeios culturais e experiências gastronômicas locais.
+                            Focada em passeios culturais familiares, astrofotografia noturna e vivências gastronômicas
+                            na caatinga.
                         </p>
-
                         <div class="guide-days">
-
                             <span class="guide-day">Qua</span>
                             <span class="guide-day">Qui</span>
                             <span class="guide-day">Sex</span>
                             <span class="guide-day">Sáb</span>
                             <span class="guide-day">Dom</span>
-
                         </div>
-
                     </div>
-
                 </div>
-               
+
                 <div class="guide-card">
-                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d" alt="Guia"
-                        class="guide-image">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80"
+                        alt="Guia Carlos Lima" class="guide-image">
                     <div class="guide-content">
                         <div class="guide-top">
                             <h3>Carlos Lima</h3>
@@ -183,7 +159,8 @@
                             </div>
                         </div>
                         <p class="guide-description">
-                            Especializado em ecoturismo e aventuras na natureza.
+                            Especializado em ecoturismo de aventura, trekking técnico pelos cânions e observação da
+                            fauna local.
                         </p>
                         <div class="guide-days">
                             <span class="guide-day">Seg</span>
@@ -192,12 +169,85 @@
                             <span class="guide-day">Sáb</span>
                         </div>
                     </div>
-                    
                 </div>
 
-                
+                <div class="guide-card">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80"
+                        alt="Guia Ana Beatriz" class="guide-image">
+                    <div class="guide-content">
+                        <div class="guide-top">
+                            <h3>Ana Beatriz</h3>
+                            <div class="guide-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <p class="guide-description">
+                            Bióloga e guia, especialista na flora endêmica da caatinga e turismo pedagógico para grandes
+                            grupos.
+                        </p>
+                        <div class="guide-days">
+                            <span class="guide-day">Ter</span>
+                            <span class="guide-day">Qua</span>
+                            <span class="guide-day">Qui</span>
+                            <span class="guide-day">Sáb</span>
+                            <span class="guide-day">Dom</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80"
+                        alt="Guia Ricardo Sousa" class="guide-image">
+                    <div class="guide-content">
+                        <div class="guide-top">
+                            <h3>Ricardo Sousa</h3>
+                            <div class="guide-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <p class="guide-description">
+                            Condutor de turismo histórico com mais de 10 anos de experiência nos circuitos do
+                            Desfiladeiro e da Capivara.
+                        </p>
+                        <div class="guide-days">
+                            <span class="guide-day">Seg</span>
+                            <span class="guide-day">Qua</span>
+                            <span class="guide-day">Qui</span>
+                            <span class="guide-day">Sex</span>
+                            <span class="guide-day">Sáb</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80"
+                        alt="Guia Juliana Costa" class="guide-image">
+                    <div class="guide-content">
+                        <div class="guide-top">
+                            <h3>Juliana Costa</h3>
+                            <div class="guide-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <p class="guide-description">
+                            Guia bilíngue (Inglês/Espanhol) focada em circuitos acessíveis e na história geopolítica do
+                            parque.
+                        </p>
+                        <div class="guide-days">
+                            <span class="guide-day">Qui</span>
+                            <span class="guide-day">Sex</span>
+                            <span class="guide-day">Sáb</span>
+                            <span class="guide-day">Dom</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 </body>
+
 </html>
